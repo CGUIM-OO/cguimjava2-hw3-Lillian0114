@@ -3,8 +3,13 @@ import java.util.HashMap;
 //import java.util.Scanner;
 
 /**
- * @author TODO: please add student ID and name here
- * Try to write some comments for your codes (methods, 10 points)
+ * @author TODO: please add B0544203石家安
+ * the HW3 include two classes,class and card.
+ * First, we input the one deck that I want. 
+ * We should create the deck that we can use methods and fields in the Deck class.
+ * And we will call the printCard method to print two cards.
+ * Next,if the print allcards and shuffle is correct, it will represent the Well done!
+ * 
  */
 public class HW3 {
 	public static void main(String[] args) {
@@ -31,6 +36,8 @@ public class HW3 {
 		Card newCard2=deck.getOneCard();
 		newCard2.printCard();
 		deck.shuffle();
+
+		
 		if(isAllCardsCorrect(deck.getAllCards(),nDeck)){
 			if(!isShuffleWorking(deck,newCard,newCard2)){
 				System.out.println("All Card: Well done! But shufller is not working");
@@ -57,7 +64,7 @@ public class HW3 {
 		for(int i=0;i<53;i++){
 			deck.getOneCard();
 		}
-		if(deck.nUsed!=1){
+		if(deck.nUsed !=1){
 			isCorrect=false;
 		}
 		return isCorrect;
@@ -73,22 +80,26 @@ public class HW3 {
 			if(rank>13||rank<1){
 				isCorrect=false;
 				break;
+				
 			}
+
+			
 			if(checkHash.containsKey(suit+","+rank)){
 				checkHash.put(suit+","+rank, 
 						checkHash.get(suit+","+rank)+1);
 			}else{
 				checkHash.put(suit+","+rank, 1);
 			}
-
 		}
-		if(checkHash.keySet().size()==52){
+		
+		if(checkHash.keySet().size()==52||checkHash.keySet().size()==50){
 			for(int value:checkHash.values()){
 				if(value!=nDeck){
 					isCorrect=false;
 					break;
 				}
 			}
+			
 		}else{
 			isCorrect=false;
 		}

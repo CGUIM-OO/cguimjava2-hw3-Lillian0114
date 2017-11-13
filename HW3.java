@@ -1,6 +1,6 @@
 import java.util.ArrayList;
 import java.util.HashMap;
-//import java.util.Scanner;
+import java.util.Scanner;
 
 /**
  * @author TODO: please add B0544203石家安
@@ -13,9 +13,9 @@ import java.util.HashMap;
  */
 public class HW3 {
 	public static void main(String[] args) {
-		//Scanner sc = new Scanner(System.in);
-		//System.out.println("input N(deck of cards):");
-		//String testn= sc.nextLine(); 
+//		Scanner sc = new Scanner(System.in);
+//		System.out.println("input N(deck of cards):");
+//		String testn= sc.nextLine(); 
 		int nDeck=1;
 		//TODO: please add new fields and methods to Deck class (35)
 		//usedCard (5 points)
@@ -24,6 +24,7 @@ public class HW3 {
 		//shuffle (10 points)
 		//constructor (5 points)
 		Deck deck=new Deck(nDeck);
+		
 		
 		//TODO: please check your output, make sure that you print newCard and newCard2 on your screen  (10 points)
 		//TODO: please add new fields and methods to Card class (25)

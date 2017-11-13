@@ -19,7 +19,7 @@ public class Card {
 	}	
 	
 	/**
-	 * * Next, printCard, getSuit and getRank is the method.
+	 * Next, printCard, getSuit and getRank is the method.
 	 * Create the array to present the rank and enum the Suit conveniently. 
 	 * The first index of array is 0, so we should subtract 1 when we want to get the String from array.
 	 * In the end println the card.
@@ -37,18 +37,4 @@ public class Card {
 	}
 }
 
-
-//switch(suit) {
-//case Club:
-//	System.out.println(Suit.Club+" "+RankArray[rank-1]);
-//	break;
-//case Diamond:
-//	System.out.println(Suit.Diamond+" "+RankArray[rank-1]);
-//	break;
-//case Heart:
-//	System.out.println(Suit.Heart+" "+RankArray[rank-1]);
-//	break;
-//default:
-//	System.out.println(Suit.Spade+" "+RankArray[rank-1]);
-//}
 

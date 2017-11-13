@@ -55,7 +55,7 @@ public class Deck {
 	 * Random to get any card and put this into new position. SO, we should use the for loop.
 	 * Because we want to exchange the i position card and j position card, 
 	 * we should Card the temp to let one card can be seted temporary.
-	 * Last, we want to reuse the UsedCard and nUsed field, we need to initialize those again. 
+	 * Last, we want to reuse the UsedCard method and nUsed field, we need to initialize those again. 
 	 */
 	public void shuffle(){
 		cards.addAll(usedCard);
@@ -74,7 +74,7 @@ public class Deck {
 	 * We should create the oneCard field first.
 	 * And if someone call the getOneCard method, we need to know weather there have cards in the deck.
 	 * So, if there don't have cards, we should call the shuffle method. Next, use recursive to call the getOneCard.
-	 * if there still have cards in deck, we will get the first card to player.
+	 * if there still are cards in deck, we will get the first card to player.
 	 * So we should remove the first card in allCards arraylist after we put this card in useCard arraylist.
 	 * In the end, we will return oneCard.
 	 * @return oneCard ( when someone want newCard)
